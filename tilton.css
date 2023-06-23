@@ -16,44 +16,51 @@
   aspect-ratio: 1;
   background-color: black;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  row-gap: 5%;
 }
 
 .header {
-  border: 1px solid red;
   width: 96%;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
-}
-
-.pakage {
-  height: 60px;
-  width: 187px;
-  border: 1px solid red;
-  border-radius: 2em;
+  border-bottom: 3px solid white;
 }
 
 .search-nav {
   width: 16%;
-  border: 1px solid blue;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
+.pakage {
+  height: 60px;
+  width: 187px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 2em;
+}
+
 .search {
   width: var(--search-side);
   height: var(--search-side);
-  border: 1px solid red;
   border-radius: 50%;
+  background-image: url(./resource/seach-icon-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .box{
   height: var(--header-height);
   aspect-ratio: .86;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,16 +75,49 @@
   font-size: 3.5em;
   font-weight: 600;
   width: 12%;
-  border: 1px solid red;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
+/* 
+.image-1 { 
+   background-image: url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg); 
+   width: 1752px; 
+   height: 802px; 
+   background-repeat: no-repeat; 
+ } */
+.multiline-title {
+  height: 30%;
+  width: 55%;
+  border: 1px solid rgb(190, 135, 135);
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.mini-logo {
+  background: url(./resource/mini-logo.png);
+  background-size: cover;
+  width: 6%;
+  aspect-ratio: 1;
+  border: 1px solid red;
+  align-self: baseline;
+ }
 
-/* .image-1 { */
-  /* background-image: url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg); */
-  /* width: 1752px; */
-  /* height: 802px; */
-  /* background-repeat: no-repeat; */
-/* } */
+ .title-lines {
+  border: 1px solid rgb(0, 255, 149);
+  width: 85%;
+ }
+
+ .title-line {
+  font-size: 8em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  border: 1px solid red;
+ }
+
+ .title-lines >.mid {
+  border: 2px solid blue;
+  text-align: right;
+ }
