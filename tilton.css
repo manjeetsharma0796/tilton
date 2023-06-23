@@ -11,10 +11,24 @@
   color: white;
 }
 
+body {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2em;
+}
+
 .page {
-  width: 100%;
-  aspect-ratio: 1;
-  background-color: black;
+  width: 98%;
+  height: 98%;
+  /* background-color: black; */
+  background-image: url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid red;
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -38,7 +52,7 @@
   align-items: center;
 }
 
-.pakage {
+.package {
   height: 60px;
   width: 187px;
   background-color: white;
@@ -79,15 +93,15 @@
   justify-content: flex-end;
   align-items: center;
 }
-/* 
+
 .image-1 { 
    background-image: url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg); 
    width: 1752px; 
    height: 802px; 
    background-repeat: no-repeat; 
- } */
+ }
+
 .multiline-title {
-  height: 30%;
   width: 55%;
   border: 1px solid rgb(190, 135, 135);
   display: flex;
