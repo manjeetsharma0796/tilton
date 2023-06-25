@@ -12,21 +12,31 @@
 }
 
 body {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 2em;
+  margin: 0 auto;
 }
 
-.page {
+.home-page {
   width: 98%;
-  height: 98%;
-  /* background-color: black; */
-  background-image: url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg); 
+  height: 200%;
+  margin: 0 auto;
+  
+  background-color: rgb(243, 241, 238);
+  border-bottom-left-radius: 3em;
+  border-bottom-right-radius: 3em;
+}
+
+.home {
+  width: 100%;
+  height: 49%;
+  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid red;
   border-bottom-left-radius: 3em;
   border-bottom-right-radius: 3em;
   display: flex;
@@ -34,6 +44,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   row-gap: 5%;
+  margin: 0 auto;
 }
 
 .header {
@@ -72,7 +83,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.box{
+.box {
   height: var(--header-height);
   aspect-ratio: .86;
   display: flex;
@@ -94,44 +105,56 @@ body {
   align-items: center;
 }
 
-.image-1 { 
-   background-image: url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg); 
-   width: 1752px; 
-   height: 802px; 
-   background-repeat: no-repeat; 
- }
+.image-1 {
+  background-image: url(https://www.tiltongroup.com/assets/medias/_hero_tablet/HD_tilton_20201103-338-copie.jpg);
+  width: 1752px;
+  height: 802px;
+  background-repeat: no-repeat;
+}
 
 .multiline-title {
-  width: 55%;
-  border: 1px solid rgb(190, 135, 135);
+  width: 60%;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 }
- 
+
 .mini-logo {
   background: url(./resource/mini-logo.png);
   background-size: cover;
   width: 6%;
   aspect-ratio: 1;
-  border: 1px solid red;
+
   align-self: baseline;
- }
+}
 
- .title-lines {
-  border: 1px solid rgb(0, 255, 149);
+.title-lines {
   width: 85%;
- }
 
- .title-line {
+}
+
+.title-line {
   font-size: 8em;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
-  border: 1px solid red;
- }
+  transition-duration: 1s;
 
- .title-lines >.mid {
-  border: 2px solid blue;
+
+}
+
+.title-lines:hover .title-line{
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+  transition-property: all;
+}
+
+.title-lines>.mid {
   text-align: right;
- }
+}
+
+.page-2 {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(100, 119, 104);
+}
